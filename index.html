@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Building</title>
+<link rel="icon" href="resources/logo.jpg">
+	
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container-fluid" >
+<!-- cover -->
+<div> <img src="resources/h01_cover.jpg" class="w-100"> </div>
+<!-- menu bar -->
+
+<nav class="navbar navbar-expand-xl navbar-dark p-0 " id="menu" style="background-color: #323A45;"> <a class="navbar-brand d-xl-none w-50"  style="padding-left: 1em;font-size: 1em;" href="#">Global Building</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse " id="navbar">
+    <ul class="navbar-nav mr-auto mt-2 mt-xl-0 m-auto" style="font-size: 1em;color: white;">
+      <li class="nav-item "> <a class="menu_topic text-center" href="#idea">แนวคิดโครงการ</a> </li>
+      <li class="nav-item"> <a class="menu_topic text-center" href="#vdo">vdo แนะนำโครงการ</a> </li>
+      <li class="nav-item"> <a class="menu_topic" href="#facility">สิ่งอำนวยความสะดวก</a> </li>
+      <li class="nav-item"> <a class="menu_topic" href="#location">ที่ตั้งโครงการ</a> </li>
+      <li class="nav-item"> <a class="menu_topic" href="#plan">แบบบ้าน</a> </li>
+      <li class="nav-item"> <a class="menu_topic" href="#gallery">แกลลอรี่</a> </li>
+      <li class="nav-item "> <a class="menu_topic" href="#progress">ความคืบหน้า</a> </li>
+      <li class="nav-item "> <a class="menu_topic" href="#aboutus">ติดต่อเรา</a> </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<script>
+window.onscroll = function() {stickyFunction()};
+
+var navbar = document.getElementById("menu");
+var sticky = navbar.offsetTop;
+
+function stickyFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+if($(window).width() <= 991){
+  $('.nav-item a').on('click', function(){
+    $('.navbar-toggler').click(); //bootstrap 4.x
+  });
+
+}
+
+</script> 
+
+<!-- content -->
+<div data-spy="scroll" data-target="#navbar" data-offset="0" style="height: 100%;z-index: -1;" class="container "> 
+  
+  <!-- idea -->
+  
+  <div id="idea" style="background-image: url(resources/c01_idea_img.jpg); background-size: contain; background-repeat: no-repeat;" class="w-100 position-relative">
+    <div class=" w-100 "><img src="resources/c01_idea_img.jpg" class="w-100 invisible"> </div>
+    <div class="w-100 h-50 centered outstnd_text_bg d-none d-md-block" ></div>
+    <div class="w-100 h-100 centered outstnd_text_bg d-block d-md-none" ></div>
+    <div style="color: white;font-size: 1.2em;" class="w-100 centered d-none d-sm-block ">
+      <h1 class="text-center" style="font-size: 2em;font-weight: bold"><span class="glyphicon glyphicon-cloud"></span>แนวคิดโครงการ</h1>
+      <div class="text-center" style=""> ยกระดับออฟฟิศสมัยใหม่<br>
+        ตัวอาคารเหมาะกับการใช้สอยในรูปแบบสำนักงานและจัดกิจกรรมสันทนาการ<br>
+        สะดวกสบายด้วยการเดินทางที่พรั่งพร้อม<br>
+      </div>
+    </div>
+	  
+	<div style="color: white;font-size: 0.7em;" class="w-100 centered d-block d-sm-none">
+      <h1 class="text-center" style="font-size: 1.3em;font-weight: bold"><span class="glyphicon glyphicon-cloud"></span>แนวคิดโครงการ</h1>
+      <div class="text-center" style=""> ยกระดับออฟฟิศในสมัยใหม่<br>
+        ตัวอาคารเหมาะกับการใช้สอย <br>
+		ในรูปแบบสำนักงานและจัดกิจกรรมสนทนาการ<br>
+        สะดวกสบายด้วยการเดินทางที่พรั่งพร้อม<br>
+      </div>
+    </div>
+  </div>
+  
+  <!-- vdo -->
+  <div id="vdo" style="padding-top: 1em;">
+    <div class="container-fluid " style="background-color: black;padding: 0.0em;" >
+      <div  class="container">
+        <video width="100%" height="auto" controls>
+          <source src="resources/c02_vdo.mp4" type="video/mp4">
+          Your browser does not support the video tag. </video>
+		  <!-- <iframe width="100%" height="586" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      </div>
+	  
+    </div>
+  </div>
+  
+  <!-- facilty --> 
+  <!-- web --> 
+  <br id="facility" style="padding-top: 1em;">
+  <div class="d-none d-lg-block" style="">
+    <div id="carouselIndicators" class="carousel slide position-relative" data-ride="">
+      <div class="carousel-inner">
+        <div class="carousel-item active"> <img class="d-block w-100" src="resources/c03_facility_01_img.jpg"> </div>
+        <div class="carousel-item"> <img class="d-block w-100" src="resources/c03_facility_02_img.jpg"> </div>
+        <div class="carousel-item"> <img class="d-block w-100" src="resources/c03_facility_03_img.jpg"> </div>
+        <div class="carousel-item"> <img class="d-block w-100" src="resources/c03_facility_04_img.jpg"> </div>
+      </div>
+      <div class="w-100 text-center position-absolute" style="top: 0px;padding: 1em;">
+        <div class="row justify-content-center " style="padding: 0em;">
+          <h2 style="padding: 1em;padding-bottom: 0em; font-size: 2em; font-weight: bold;color: #323A45;width: 100%;text">สิ่งอำนวยความสะดวก</h2>
+        </div>
+        <div class="" style="padding: 0em 5em 0em 5em ;"> 
+          <!--row1-->
+          <div class="container row w-100 m-auto justify-content-center" style=""> 
+            <!--col1-->
+            <div class="text-center col-lg-5 box" style="padding: 0em;margin: 0.5em;"
+			   data-target="#carouselIndicators" data-slide-to="0" > <img src="resources/c03_facility_01_icon.png" class="w-100" > </div>
+            <div class="text-center col-lg-5 box" style="padding: 0em;margin: 0.5em;"
+			   data-target="#carouselIndicators" data-slide-to="1" > <img src="resources/c03_facility_02_icon.png" class="w-100" > </div>
+          </div>
+          <!-- row2 -->
+          <div class="container row w-100 m-auto justify-content-center " style=""> 
+            <!--col1-->
+            <div class="text-center col-lg-5 box" style="padding: 0em;margin: 0.5em;"
+			    data-target="#carouselIndicators" data-slide-to="2"> <img src="resources/c03_facility_03_icon.png" class="w-100"> </div>
+            <div class="text-center col-lg-5 box " style="padding: 0em;margin: 0.5em;"
+			    data-target="#carouselIndicators" data-slide-to="3"> <img src="resources/c03_facility_04_icon.png" class="w-100"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- mobile -->
+  <div class="d-block d-lg-none" style="">
+    <div id="carouselIndicators2" class="carousel slide" data-ride="carousel" style="z-index: 0;">
+      <ol class="carousel-indicators" >
+        <li data-target="#carouselIndicators2" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselIndicators2" data-slide-to="1"></li>
+        <li data-target="#carouselIndicators2" data-slide-to="2"></li>
+        <li data-target="#carouselIndicators2" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" >
+        <div class="carousel-item active "> <img class="d-block w-100" src="resources/c03_facility_01_img.jpg">
+          <div class="carousel-caption">
+            <h5 style="font-size: 2em;" >สระว่ายน้ำดาดฟ้า</h5>
+          </div>
+        </div>
+        <div class="carousel-item"> <img class="d-block w-100" src="resources/c03_facility_02_img.jpg">
+          <div class="carousel-caption">
+            <h5 style="font-size: 2em;">สกายเล้าจน์</h5>
+          </div>
+        </div>
+        <div class="carousel-item"> <img class="d-block w-100" src="resources/c03_facility_03_img.jpg">
+          <div class="carousel-caption">
+            <h5 style="font-size: 2em;">ที่จอดรถ</h5>
+          </div>
+        </div>
+        <div class="carousel-item"> <img class="d-block w-100" src="resources/c03_facility_04_img.jpg">
+          <div class="carousel-caption">
+            <h5 style="font-size: 2em;">พื้นที่ทำงาน</h5>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselIndicators2" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">ก่อนหน้า</span> </a> <a class="carousel-control-next" href="#carouselIndicators2" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">ถัดไป</span> </a> </div>
+  </div>
+  <br>
+  
+  <!-- location -->
+  <div id="location" style="">
+    <div  class="w-100" >
+      <div class="row">
+        <div class="col-lg-7 col-md-12 d-none d-sm-block" style="background-color: #3F6184;padding:2em;"> 
+          <!-- <img src="resources/c04_map_img.png" class="w-100"> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.995008902416!2d100.63395774126109!3d13.839337996897338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDUwJzIxLjYiTiAxMDDCsDM4JzA2LjciRQ!5e0!3m2!1sth!2sth!4v1553457280959" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="w-100"></iframe>
+		 
+		</div>
+          
+		  
+        <div class="col-lg-5 col-md-12" style="background-color: #E5EBEB;padding:2em;">
+          <h3 style="font-size: 2em;"><b>อาคารสำนักงาน Global Building</b></h3>
+          ตั้งอยู่บนถนนนวลจันทร์ สามารถเดินเท้าเพียง 90 เมตร จากถนนเลียบด่วนรามอินทรา<br>
+          <div class="row" style="padding-top: 1em;">
+            <div class="col-2 p-0"> <img src="resources/c04_icon_01_icon.png" class="w-100 m-auto"> </div>
+            <div class="col-10"> <b>ห้างสรรพสินค้าชั้นนำ</b>
+              <ul>
+                <li> ห้างสรรพสินค้า คริสตัลปาร์ค </li>
+                <li> ห้างสรรพสินค้า CDC </li>
+                <li> ห้างสรรพสินค้า เซ็นทรัล อีสวิลล์ </li>
+                <li> ศูนย์รวมเฟอร์นิเจอร์ครบวงจร SB furniture </li>
+                <li> ศูนย์การค้า โลตัส </li>
+                <li> ศูนย์การค้า โฮมโปร </li>
+				<li> ห้างสรรพสินค้า แฟชั่นไอซ์แลนด์ </li>
+                <li> ห้างสรรพสินค้า The walk เกษตร-นวมินทร์ </li>
+                <li> ตลาดหัวมุม เกษตร-นวมินทร์</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2 p-0"> <img src="resources/c04_icon_02_icon.png" class="w-100 m-auto"> </div>
+            <div class="col-10"> <b>เดินทางสะดวกด้วยรถไฟฟ้าใต้ดิน mrt 3 สาย</b>
+              <ul>
+                <li> สายสีชมพู บนถนนรามอินทรา </li>
+                <li> สายสีเหลือง บนถนนลาดพร้าว </li>
+                <li> สายสีเทา เชื่อมต่อสถานีนวลจันทร์</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- plan -->
+  <div id="plan" style="padding-top: 1em;">
+    <div  class="w-100" style="z-index: 0;">
+      <div class="row">
+        <div class="col-md-4 col-sm-12" style="background-color: #E5EBEB;padding:2em;">
+          <select onchange="document.getElementById('plan_img').src = this.value" class="w-100" style="float: left;">
+            <option value="resources/c05_plan_01_img.jpg">Ground Floor</option>
+            <option value="resources/c05_plan_02_img.jpg">2nd Floor</option>
+            <option value="resources/c05_plan_03_img.jpg">3rd & 4th Floor</option>
+            <option value="resources/c05_plan_04_img.jpg">5th Floor</option>
+            <option value="resources/c05_plan_05_img.jpg">Rooftop</option>
+          </select>
+        </div>
+        <div class="col-md-8 col-sm-12" style="background-color: #3F6184;padding:2em;"> <img id="plan_img" src="resources/c05_plan_01_img.jpg" class="w-100"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- gallery -->
+  <div id="gallery" style="padding-top: 1em;">
+	  <!-- pc -->
+    <div   class="w-100 d-none d-lg-block">
+      <div class="row">
+        <div class="col-lg-6 p-0"> <img src="resources/c06_f01_img.jpg" width="100%">
+          <div class="overlay">
+            <div class="text w-100 h-100" style="background-color: #E5EBEB;opacity: 0.7;"> </div>
+            <div class="text w-75" style="color: #323A45;"> <b><span style="font-size: 2em;">Floor 1</span></b><br>
+              <span style="font-size: 2em;">Public Relations</span><br>
+              <div style="height: 2px;background-color: #323A45;margin: 0.5em;"></div>
+              ชั้น 1 เป็นส่วนพื้นที่จอดรถยนต์ในร่ม <br>
+              ห้องน้ำและห้องเอนกประสงค์
+              พร้อมพื้นที่จอดรถยนตร์นอกอาคาร <br> พื้นที่สวนสีเขียว </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-0"> <img src="resources/c06_f02_img.jpg" width="100%">
+          <div class="overlay">
+            <div class="text w-100 h-100" style="background-color: #E5EBEB;opacity: 0.7;"> </div>
+            <div class="text w-75" style="color: #323A45;"> <b><span style="font-size: 2em;">Floor 2</span></b><br>
+              <span style="font-size: 2em;">Seminar room & Hall</span><br>
+              <div style="height: 2px;background-color: #323A45;margin: 0.5em;"></div>
+              ชั้น 2 เป็นส่วนสำนักงานในล๊อบบี้ส่วนพื้นที่ต้อนรับ
+              ห้องน้ำชาย หญิง และโถงลิฟท์ ห้องแม่บ้าน </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-6 p-0"><img src="resources/c06_f03_01_img.jpg" width="100%"></div>
+            <div class="col-lg-6 p-0"><img src="resources/c06_f03_02_img.jpg" width="100%"></div>
+          </div>
+          <div class="overlay">
+            <div class="text w-100 h-100" style="background-color: #323A45;opacity: 0.7;"> </div>
+            <div class="text w-50" style="color: #FFFFFF;"> <b><span style="font-size: 2em;">Floor 3 & 4</span></b><br>
+              <span style="font-size: 2em;">Office Space</span><br>
+              <div style="height: 2px;background-color: #323A45;margin: 0.5em;"></div>
+              ชั้น 3 และ 4 เป็นส่วนสำนักงานในล๊อบบี้ส่วนพื้นที่ต้อนรับ <br>
+              ห้องน้ำชาย หญิง โกงลิฟท์ และ ห้องแม่บ้าน ติดวิวทางด่วน </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-lg-6 p-0"> <img src="resources/c06_f04_img.jpg" width="100%">
+          <div class="overlay">
+            <div class="text w-100 h-100" style="background-color: #E5EBEB;opacity: 0.7;"> </div>
+            <div class="text w-75" style="color: #323A45;"> <b><span style="font-size: 2em;">Floor 5</span></b><br>
+              <span style="font-size: 2em;">Executive Office</span><br>
+              <div style="height: 2px;background-color: #323A45;margin: 0.5em;"></div>
+              ชั้น 5 เป็นส่วนสำนักงานผู้บริหารระดับสูง </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-0"> <img src="resources/c06_f05_img.jpg" width="100%">
+          <div class="overlay">
+            <div class="text w-100 h-100" style="background-color: #E5EBEB;opacity: 0.7;"> </div>
+            <div class="text w-75" style="color: #323A45;"> <b><span style="font-size: 2em;">Floor 6</span></b><br>
+              <span style="font-size: 2em;">Pool Deck</span><br>
+              <div style="height: 2px;background-color: #323A45;margin: 0.5em;"></div>
+              ชั้น 6 เป็นส่วนพื้นสำหรับทำกิจกรรมสันทนาการรูปแบบ Sky Lounge 
+              มีสระว่ายน้ำเพื่อใช้ในการจัดกิจกรรมสันทนาการพร้อมด้วยวิวทางด่วน </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	  <!-- mobile -->
+    <div class="w-100 d-block d-lg-none" style="font-size: 0.7em;">
+      <div class="row">
+        <div class="col-lg-6 p-0"> <img src="resources/c06_f01_img.jpg" width="100%">
+          <div class="overlay">
+            <div class="text w-100 h-100" style="background-color: #E5EBEB;opacity: 0.7;"> </div>
+            <div class="text w-75" style="color: #323A45;"> <b><span style="font-size: 1.3em;">Floor 1</span></b><br>
+              <span style="font-size: 1.3em;">Public Relations</span><br>
+              <div style="height: 1px;background-color: #323A45;margin: 0.1em;"></div>
+              ชั้น 1 เป็นส่วนพื้นที่จอดรถยนต์ในร่ม <br>
+              ห้องน้ำและห้องเอนกประสงค์
+              พร้อมพื้นที่จอดรถยนตร์นอกอาคาร พื้นที่สวนสีเขียว </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-0"> <img src="resources/c06_f02_img.jpg" width="100%">
+          <div class="overlay">
+            <div class="text w-100 h-100" style="background-color: #323A45;opacity: 0.7;"> </div>
+            <div class="text w-75" style="color: #FFFFFF;"> <b><span style="font-size: 1.3em;">Floor 2</span></b><br>
+              <span style="font-size: 1.3em;">Seminar room & Hall</span><br>
+              <div style="height: 1px;background-color: #FFFFFF;margin: 0.1em;"></div>
+              ชั้น 2 เป็นส่วนสำนักงานในล๊อบบี้ส่วนพื้นที่ต้อนรับ
+              ห้องน้ำชาย หญิง และโถงลิฟท์ ห้องแม่บ้าน </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-12 p-0"><img src="resources/c06_f03_01_img.jpg" width="100%"></div>
+          </div>
+          <div class="overlay">
+            <div class="text w-100 h-100" style="background-color: #E5EBEB;opacity: 0.7;"> </div>
+            <div class="text w-75" style="color: #323A45;"> <b><span style="font-size: 1.3em;">Floor 3 & 4</span></b><br>
+              <span style="font-size: 1.3em;">Office Space</span><br>
+              <div style="height: 1px;background-color: #323A45;margin: 0.1em;"></div>
+              ชั้น 3 และ 4 เป็นส่วนสำนักงานในล๊อบบี้ส่วนพื้นที่ต้อนรับ
+              ห้องน้ำชาย หญิง โกงลิฟท์ และ ห้องแม่บ้าน ติดวิวทางด่วน </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-lg-6 p-0"> <img src="resources/c06_f04_img.jpg" width="100%">
+          <div class="overlay">
+            <div class="text w-100 h-100" style="background-color: #323A45;opacity: 0.7;"> </div>
+            <div class="text w-75" style="color: #FFFFFF;"> <b><span style="font-size: 1.3em;">Floor 5</span></b><br>
+              <span style="font-size: 1.3em;">Executive Office</span><br>
+              <div style="height: 1px;background-color: #FFFFFF;margin: 0.1em;"></div>
+              ชั้น 5 เป็นส่วนสำนักงานผู้บริหารระดับสูง</div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-0"> <img src="resources/c06_f05_img.jpg" width="100%">
+          <div class="overlay">
+            <div class="text w-100 h-100" style="background-color: #E5EBEB;opacity: 0.7;"> </div>
+            <div class="text w-75" style="color: #323A45;"> <b><span style="font-size: 1.3em;">Floor 6</span></b><br>
+              <span style="font-size: 1.3em;">Pool Deck</span><br>
+              <div style="height: 1px;background-color: #323A45;margin: 0.1em;"></div>
+              ชั้น 6 เป็นส่วนพื้นสำหรับทำกิจกรรมสันทนาการรูปแบบ Sky Lounge 
+              มีสระว่ายน้ำเพื่อใช้ในการจัดกิจกรรมสันทนาการพร้อมด้วยวิวทางด่วน </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- progress -->
+  <div id="progress" style="padding-top: 1em;" class="">
+    <div class="position-relative "> <img src="resources/c07_progress_img.jpg" class="w-100">
+      <!-- pc -->
+		<div class="position-absolute w-100 d-none d-sm-block" style="background-color: rgba(22,22,22,0.70);bottom: 0px;">
+        <div class="text-white row container" style="">
+          <div class="col-4 position-relative">
+            <div class="position-absolute" style="bottom: 0em;"> ความคืบหน้าโดยรวม<br>
+              <div style="font-size: 8em;line-height: 60%" class="pb-0">48%</div>
+              <br>
+            </div>
+          </div>
+          <div class="col-8">
+            <div style="padding: 1em;">
+              <div>
+                <div class="row">
+                  <div class="col-6 text-left"> งานโครงสร้าง </div>
+                  <div class="col-6 text-right" > 75% </div>
+                </div>
+                <div class="w-100" >
+                  <div class="progress" style="height: 0.8em;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-6 text-left"> งานระบบ </div>
+                  <div class="col-6 text-right" > 17% </div>
+                </div>
+                <div class="w-100" >
+                  <div class="progress" style="height: 0.8em;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:17%"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-6 text-left"> งานสถาปัตยกรรม </div>
+                  <div class="col-6 text-right" > 0% </div>
+                </div>
+                <div class="w-100" >
+                  <div class="progress" style="height: 0.8em;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-6 text-left"> งานเสาเข็มแล้วเสร็จ </div>
+                  <div class="col-6 text-right" > 100% </div>
+                </div>
+                <div class="w-100" >
+                  <div class="progress" style="height: 0.8em;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <!-- mobile -->
+	
+	  <div class="w-100 d-block d-sm-none position-absolute" style="bottom: 0px;">
+        <div class="text-black container" style="">
+            <div class="" style="bottom: 0em;"> ความคืบหน้าโดยรวม<br>
+              <div style="font-size: 8em;line-height: 50%" class="text-center">48%</div>
+              <br>
+            </div>
+      	</div>
+    </div>
+	  </div>
+		<div style="background-color: #3F6184;" class="text-white d-block d-sm-none">
+          <div class="col-12">
+            <div style="padding: 1em;">
+              <div class="w-100">
+                <div class="row ">
+                  <div class="col-10 text-left"> งานโครงสร้าง </div>
+                  <div class="col-2 text-right" > 75% </div>
+                </div>
+                <div class="w-100" >
+                  <div class="progress w-100" style="height: 0.8em;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-10 text-left"> งานระบบ </div>
+                  <div class="col-2 text-right" > 17% </div>
+                </div>
+                <div class="w-100" >
+                  <div class="progress" style="height: 0.8em;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:17%"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-10 text-left"> งานสถาปัตยกรรม </div>
+                  <div class="col-2 text-right" > 0% </div>
+                </div>
+                <div class="w-100" >
+                  <div class="progress" style="height: 0.8em;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-10 text-left"> งานเสาเข็มแล้วเสร็จ </div>
+                  <div class="col-2 text-right" > 100% </div>
+                </div>
+                <div class="w-100" >
+                  <div class="progress" style="height: 0.8em;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	</div>
+  
+  <!-- footer --> 
+  <!--web--> 
+  <br id="aboutus">
+  <div  class="w-100 " style="background-image: url(resources/c08_contact_img.jpg); background-size: cover; " >
+    <div class="d-none d-md-block">
+      <div class="m-auto text-white text-center row" style="padding: 1em;" >
+        <div class="col-md-3 w-100 h-100" ></div>
+        <div class="col-md-9">
+          <div class="row m-auto">
+            <div class="col-md-6 text-right">Address : </div>
+            <div class="col-md-6 text-left">31 สุขุมวิท 12 แขวงคลองเตย เขตคลองเตย กทม 10110</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-md-6 text-right">Mobile : </div>
+            <div class="col-md-6 text-left">081-735-9845</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-md-6 text-right">Email : </div>
+            <div class="col-md-6 text-left">Tos@ntec.co.th</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-md-6 text-right">เจ้าของโครงการ : </div>
+            <div class="col-md-6 text-left">บริษัทโกลบอล รีซอร์สเซส จำกัด</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-md-6 text-right">กรรมการผู้จัดการ : </div>
+            <div class="col-md-6 text-left">นาย ทศพร ศรีเอี่ยม</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--ipad-->
+    <div class="d-none d-sm-block d-md-none" style="background-color: hsla(0,0%,13%,0.70);">
+      <div class="m-auto text-white text-center row" style="padding: 1em;" >
+        <div class="">
+          <div class="row m-auto">
+            <div class="col-5 text-right">Address : </div>
+            <div class="col-7 text-left">31 สุขุมวิท 12 แขวงคลองเตย เขตคลองเตย กทม 10110</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-5 text-right">Mobile : </div>
+            <div class="col-7 text-left ">081-735-9845</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-5 text-right">Email : </div>
+            <div class="col-7 text-left ">Tos@ntec.co.th</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-5 text-right">เจ้าของโครงการ : </div>
+            <div class="col-7 text-left ">บริษัทโกลบอล รีซอร์สเซส จำกัด</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-5 text-right">กรรมการผู้จัดการ : </div>
+            <div class="col-7 text-left ">นาย ทศพร ศรีเอี่ยม</div>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+	<!--mobile-->
+    <div class="d-block d-sm-none" style="background-color: hsla(0,0%,13%,0.70);">
+      <div class="m-auto text-white text-center row" style="padding: 0.2em;" >
+        <div class="" style="font-size: 0.5em;">
+          <div class="row m-auto">
+            <div class="col-6 text-right">Address : </div>
+            <div class="col-6 text-left">31 สุขุมวิท 12 แขวงคลองเตย เขตคลองเตย กทม 10110</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-6 text-right">Mobile : </div>
+            <div class="col-6 text-left ">081-735-9845</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-6 text-right">Email : </div>
+            <div class="col-6 text-left ">Tos@ntec.co.th</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-6 text-right">เจ้าของโครงการ : </div>
+            <div class="col-6 text-left ">บริษัทโกลบอล รีซอร์สเซส จำกัด</div>
+          </div>
+          <div class="row m-auto">
+            <div class="col-6 text-right">กรรมการผู้จัดการ : </div>
+            <div class="col-6 text-left ">นาย ทศพร ศรีเอี่ยม</div>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+  </div>
+</div>
+
+<br>
+<div class="container-fluid text-center text-white p-2 bg-dark" >@copyright Global-Building</div>
+
+</body>
+</html>
